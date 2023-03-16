@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CapstoneProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".AddFAQ"
+            android:exported="false" />
+        <activity
+            android:name=".faq.ViewFaqActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".admin.AddFaqActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".admin.ManageFaqActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".auth.ForgotPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".auth.RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".faq.RentControlActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".faq.MaintenanceActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".faq.HearingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".faq.LeaseRenewalActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".faq.WarningLettersActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".faq.RentIssuesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".faq.RoommateReplacementActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".faq.ApplicationLeasingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".NavigatorE"
+            android:exported="true"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar" />
+        <activity
+            android:name=".NavigatorC"
+            android:exported="true"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".AskQuestion"
+            android:exported="true"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar" />
+        <activity
+            android:name=".Category"
+            android:exported="true"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CapstoneProject.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

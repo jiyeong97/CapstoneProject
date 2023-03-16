@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs"
+    android:background="@color/whiteGray">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/TopLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/topBackgroudImg"
+            android:layout_width="0dp"
+            android:layout_height="198dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/shade" />
+
+        <ImageView
+            android:id="@+id/logoImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/upperedgelogo" />
+
+        <ImageView
+            android:id="@+id/logoTitleImg"
+            android:layout_width="210dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toEndOf="@+id/logoImg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/upperedgetitle" />
+
+        <TextView
+            android:id="@+id/AboutUsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="215dp"
+            android:text="About Us"
+            android:textAlignment="center"
+            android:textColor="@color/darkBlue"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logoTitleImg" />
+
+        <ImageButton
+            android:id="@+id/naviBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/topBackgroudImg"
+            app:layout_constraintStart_toEndOf="@+id/logoTitleImg"
+            app:layout_constraintTop_toTopOf="@+id/topBackgroudImg"
+            android:backgroundTint="@color/clear"
+            android:scaleType="centerCrop"
+            android:src="@drawable/threeline"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/TopLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:id="@+id/boxImg"
+                android:layout_width="350dp"
+                android:layout_height="247dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/aboutbox" />
+
+            <ImageView
+                android:id="@+id/goalIconImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/goalicon" />
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="48dp"
+                android:text="Our Mission"
+                android:textAlignment="viewStart"
+                android:textColor="@color/darkBlue"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/goalIconImg"
+                app:layout_constraintTop_toTopOf="@+id/boxImg" />
+
+            <TextView
+                android:id="@+id/content1"
+                android:layout_width="265dp"
+                android:layout_height="99dp"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="2sp"
+                android:text="To create great experiences for both tenants and owners, resulting in long relationships based on empathy, good communication and trust."
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/boxImg"
+                app:layout_constraintHorizontal_bias="0.686"
+                app:layout_constraintStart_toStartOf="@+id/boxImg"
+                app:layout_constraintTop_toBottomOf="@+id/title1" />
+
+            <ImageView
+                android:id="@+id/underBoxImg"
+                android:layout_width="342dp"
+                android:layout_height="201dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="-10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content2"
+                app:srcCompat="@drawable/aboutbox3" />
+
+            <ImageView
+                android:id="@+id/largeBoxImg"
+                android:layout_width="473dp"
+                android:layout_height="343dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/boxImg"
+                app:srcCompat="@drawable/aboutbox2" />
+
+            <ImageView
+                android:id="@+id/modelIconImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/boxImg"
+                app:srcCompat="@drawable/modelicon" />
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Inovation Model"
+                android:textAlignment="viewStart"
+                android:textColor="@color/darkBlue"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/modelIconImg"
+                app:layout_constraintTop_toTopOf="@+id/largeBoxImg" />
+
+            <TextView
+                android:id="@+id/content2"
+                android:layout_width="276dp"
+                android:layout_height="226dp"
+                android:layout_marginTop="24dp"
+                android:lineSpacingExtra="2sp"
+                android:text="Unlike most management companies that employ a single property manager to manage dozens of properties themselves, Upper Edge uses a dedicated customer service department to handle communication and small quick requests, with larger issues being escalated to dedicated departments of specially trained staff. This results in a system that delivers:"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.577"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+            <TextView
+                android:id="@+id/underContetn1"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-50dp"
+                android:text="1.Property management services that are more consistent than the competition\n 2.Peace of mind service quality that will not suffer simply because of a staffing change.\n 3.Constant review and implementation of cutting edge technology"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/underBoxImg"
+                app:layout_constraintEnd_toEndOf="@+id/underBoxImg"
+                app:layout_constraintStart_toEndOf="@+id/underBoxImg"
+                app:layout_constraintStart_toStartOf="@+id/underBoxImg"
+                app:layout_constraintTop_toBottomOf="@+id/largeBoxImg" />
+
+            <ImageView
+                android:id="@+id/underBoxImg2"
+                android:layout_width="403dp"
+                android:layout_height="247dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="-100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/boxImg2"
+                app:srcCompat="@drawable/aboutbox4" />
+
+            <ImageView
+                android:id="@+id/boxImg2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/underBoxImg"
+                app:srcCompat="@drawable/aboutbox" />
+
+            <ImageView
+                android:id="@+id/serviceIconImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/underBoxImg"
+                app:srcCompat="@drawable/serviceicon" />
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Comprehensive Services"
+                android:textColor="@color/darkBlue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/serviceIconImg"
+                app:layout_constraintTop_toTopOf="@+id/boxImg2" />
+
+            <TextView
+                android:id="@+id/content3"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="2sp"
+                android:text="Upper Edge Property Management is a nationally recognized company that offers its clients a full range of services such as:"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/boxImg2"
+                app:layout_constraintEnd_toEndOf="@+id/boxImg2"
+                app:layout_constraintHorizontal_bias="0.635"
+                app:layout_constraintStart_toStartOf="@+id/boxImg2"
+                app:layout_constraintTop_toBottomOf="@+id/title3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/underContent2"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-40dp"
+                android:text="1. Leasing and Renewals\n 2. Renovation and Repairs\n 3. Landscaping and Snow Removal\n 4. Investment advice\n 5. Rental market analysis of potential target properties"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/underBoxImg2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/underBoxImg2"
+                app:layout_constraintTop_toBottomOf="@+id/boxImg2" />
+
+            <ImageView
+                android:id="@+id/largeBoxImg2"
+                android:layout_width="564dp"
+                android:layout_height="572dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/underBoxImg2"
+                app:srcCompat="@drawable/aboutbox5" />
+
+            <ImageView
+                android:id="@+id/valueIconImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/underBoxImg2"
+                app:srcCompat="@drawable/resourceicon" />
+
+            <TextView
+                android:id="@+id/title4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Core Value"
+                android:textColor="@color/darkBlue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/valueIconImg"
+                app:layout_constraintTop_toTopOf="@+id/largeBoxImg2" />
+
+            <TextView
+                android:id="@+id/content4_1"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="2sp"
+                android:text="Upper Edge's core values are evident in everything we do:"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title4" />
+
+            <TextView
+                android:id="@+id/content4_2"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:lineSpacingExtra="2sp"
+                android:text="Brand Personality"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content4_1" />
+
+            <TextView
+                android:id="@+id/content4_3"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="2sp"
+                android:text="We are a company that is passionate about our customers, our company, and our vision to be leaders in the field of property management. We are visionaries that aren't afraid to use cutting edge technologies to improve our products and service."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content4_2" />
+
+            <TextView
+                android:id="@+id/content4_4"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:lineSpacingExtra="2sp"
+                android:text="Brand Promise"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content4_3" />
+
+            <TextView
+                android:id="@+id/content4_5"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="2sp"
+                android:text="We take pride in serving our clients, both owners and tenants. We give them prompt communication with clear, concise answers to their questions, and look after their property quickly and competently."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content4_4" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/largeBoxImg2">
+
+                <ImageView
+                    android:id="@+id/bottomBackgroundImg"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/bottom" />
+
+                <ImageView
+                    android:id="@+id/emailIconImg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="60dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icons8_mail_48" />
+
+                <ImageView
+                    android:id="@+id/phoneIconImg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/emailIconImg"
+                    app:srcCompat="@drawable/icons8_phone_50" />
+
+                <TextView
+                    android:id="@+id/emailTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="65dp"
+                    android:lineSpacingExtra="0sp"
+                    android:text="Email: info@upperedgepm.com"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/emailIconImg"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/phoneTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Ph: 204-415-6200   Toll Free: 1-844-415-6200"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toEndOf="@+id/phoneIconImg"
+                    app:layout_constraintTop_toBottomOf="@+id/emailTxt" />
+
+                <TextView
+                    android:id="@+id/authorTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="© 2019 Upper Edge Property Management. All right reserved"
+                    android:textColor="@color/white"
+                    android:textSize="7sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/twitterBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
+                    app:layout_constraintStart_toEndOf="@+id/authorTxt"
+                    android:src="@drawable/twittericon"
+                    android:backgroundTint="@color/clear"
+                    android:onClick="goToTwitter"/>
+
+                <ImageButton
+                    android:id="@+id/youtubeBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
+                    app:layout_constraintStart_toEndOf="@+id/twitterBtn"
+                    android:src="@drawable/youtubeicon"
+                    android:backgroundTint="@color/clear"
+                    android:onClick="goToYoutube"/>
+
+                <ImageButton
+                    android:id="@+id/facebookBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
+                    app:layout_constraintStart_toEndOf="@+id/youtubeBtn"
+                    android:src="@drawable/facebookicon"
+                    android:backgroundTint="@color/clear"
+                    android:onClick="goToFacebook"/>
+
+                <ImageButton
+                    android:id="@+id/linkedInBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bottomBackgroundImg"
+                    app:layout_constraintStart_toEndOf="@+id/facebookBtn"
+                    android:src="@drawable/linkedinicon"
+                    android:backgroundTint="@color/clear"
+                    android:onClick="goToLinkIn"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
