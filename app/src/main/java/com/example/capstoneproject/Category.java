@@ -43,7 +43,7 @@ public class Category extends AppCompatActivity {
         naviBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Category.this, ManageFaqActivity.class);
+                Intent intent = new Intent(Category.this, NavigatorE.class);
                 startActivity(intent);
             }
         });

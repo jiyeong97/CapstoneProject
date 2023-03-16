@@ -8,6 +8,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.capstoneproject.admin.ManageFaqActivity;
+
 public class NavigatorE extends AppCompatActivity {
 
     @Override
@@ -24,7 +26,7 @@ public class NavigatorE extends AppCompatActivity {
 
     //This function links to Add FAQ activity.
     public void goToAddFAQPage(View view){
-        Intent intent = new Intent(this, AddFAQ.class);
+        Intent intent = new Intent(this, ManageFaqActivity.class);
         startActivity(intent);
     }
 
