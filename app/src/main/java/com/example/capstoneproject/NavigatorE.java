@@ -22,6 +22,12 @@ public class NavigatorE extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //This function links to Add FAQ activity.
+    public void goToAddFAQPage(View view){
+        Intent intent = new Intent(this, AddFAQ.class);
+        startActivity(intent);
+    }
+
     //This function links to FAQ categories activity.
     public void goToFAQPage(View view){
         Intent intent = new Intent(this, Category.class);

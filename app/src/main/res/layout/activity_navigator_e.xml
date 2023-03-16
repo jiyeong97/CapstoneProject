@@ -141,7 +141,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/clear"
                 android:scaleType="fitCenter"
-                android:src="@drawable/addfaqbtn" />
+                android:src="@drawable/addfaqbtn"
+                android:onClick="goToAddFAQPage"/>
 
             //This button links to About us activity.
             <ImageButton
