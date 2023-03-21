@@ -35,7 +35,7 @@ public class AskQuestion extends AppCompatActivity {
         String message = textMessage.getText().toString();
 
         Intent intent = new Intent(Intent.ACTION_SEND);
-        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"97yunjy@gmail.com"});
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"info@upperedgepm.com"});
         intent.putExtra(Intent.EXTRA_TEXT, message);
 
         intent.setType("message/rfc822");

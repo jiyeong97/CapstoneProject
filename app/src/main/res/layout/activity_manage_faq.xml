@@ -21,7 +21,8 @@
             android:layout_height="50dp"
             android:padding="12dp"
             android:src="@drawable/left_arrow"
-            app:tint="@color/white" />
+            app:tint="@color/white"
+            android:onClick="goBackToPreviousPage"/>
 
         <TextView
             android:layout_width="wrap_content"

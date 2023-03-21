@@ -43,6 +43,7 @@ public class ManageFaqActivity extends AppCompatActivity {
         maintenance = findViewById(R.id.maintenance);
         rentControl = findViewById(R.id.rentControl);
 
+
         ApplicationLeasing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -114,5 +115,11 @@ public class ManageFaqActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+    }
+
+    public void goBackToPreviousPage(View view){
+        finish();
     }
 }
