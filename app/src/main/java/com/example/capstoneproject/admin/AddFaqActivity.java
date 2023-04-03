@@ -16,6 +16,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.capstoneproject.AboutUs;
+import com.example.capstoneproject.NavigatorC;
 import com.example.capstoneproject.R;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -125,5 +127,10 @@ public class AddFaqActivity extends AppCompatActivity {
 
     public void goToLinkIn (View view){
         goToUrl("https://www.linkedin.com/company/garamark-property-management/");
+    }
+
+    public void goToNavi(View view) {
+        Intent intent = new Intent(AddFaqActivity.this, NavigatorC.class);
+        startActivity(intent);
     }
 }

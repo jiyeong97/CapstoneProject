@@ -90,7 +90,8 @@
             android:src="@drawable/threeline"
             app:layout_constraintEnd_toEndOf="@+id/topBackgroudImg"
             app:layout_constraintStart_toEndOf="@+id/logoTitleImg"
-            app:layout_constraintTop_toTopOf="@+id/topBackgroudImg" />
+            app:layout_constraintTop_toTopOf="@+id/topBackgroudImg"
+            android:onClick="goToNavi"/>
 
         <TextView
             android:id="@+id/textView4"

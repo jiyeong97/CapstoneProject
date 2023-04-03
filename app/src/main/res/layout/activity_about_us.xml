@@ -75,7 +75,8 @@
             app:layout_constraintTop_toTopOf="@+id/topBackgroudImg"
             android:backgroundTint="@color/clear"
             android:scaleType="centerCrop"
-            android:src="@drawable/threeline"/>
+            android:src="@drawable/threeline"
+            android:onClick="goToNavi"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

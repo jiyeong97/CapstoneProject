@@ -9,6 +9,11 @@ import android.view.View;
 
 public class AboutUs extends AppCompatActivity {
 
+    public void goToNavi(View view) {
+        Intent intent = new Intent(AboutUs.this, NavigatorC.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
