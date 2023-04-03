@@ -115,6 +115,7 @@
         android:id="@+id/title"
         android:layout_width="342dp"
         android:layout_height="43dp"
+        android:layout_marginStart="5dp"
         android:layout_marginBottom="364dp"
         android:background="@drawable/rec_shaperentpage"
         android:fontFamily="sans-serif"
@@ -123,8 +124,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topLayout" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/description"
@@ -221,7 +221,6 @@
         android:id="@+id/addFaqButton"
         android:layout_width="160dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
         android:backgroundTint="#4E78AA"
         android:fontFamily="sans-serif"
         android:text="Add Faq"
