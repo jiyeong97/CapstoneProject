@@ -5,9 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,10 +27,11 @@ public class AddFaqActivity extends AppCompatActivity {
 
     CollectionReference reference;
     ImageView back;
-    LinearLayout addFaqButton;
+    Button addFaqButton;
     EditText title, description;
     String category;
     TextView toolbarTitle;
+    private String[] categories = {"Application & Leasing", "Roommate Replacement", "Rent Issues", "Warning Letters", "Lease Renewal", "Hearing", "Maintenance", "Rent Control"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +41,7 @@ public class AddFaqActivity extends AppCompatActivity {
         reference = FirebaseFirestore.getInstance().collection("Faqs");
 
         back = (ImageView) findViewById(R.id.back);
-        addFaqButton = (LinearLayout) findViewById(R.id.addFaqButton);
+        addFaqButton = (Button) findViewById(R.id.addFaqButton);
         toolbarTitle = (TextView) findViewById(R.id.toolbarTitle);
 
         title = (EditText) findViewById(R.id.title);
@@ -52,6 +56,7 @@ public class AddFaqActivity extends AppCompatActivity {
             }
         });
 
+
         addFaqButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,6 +70,7 @@ public class AddFaqActivity extends AppCompatActivity {
             }
         });
     }
+
 
 
     private void uploadDescription(String category, String title, String description) {
@@ -93,6 +99,8 @@ public class AddFaqActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
+
 
     }
 }

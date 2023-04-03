@@ -39,6 +39,7 @@ public class NavigatorC extends AppCompatActivity {
         finish();
     }
 
+
     //This function show the exit dialog and close all the activities.
     public void exitDialog(View view){
         new AlertDialog.Builder(this)
@@ -49,6 +50,7 @@ public class NavigatorC extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         finishAffinity();
+                        startActivity(new Intent(NavigatorC.this, MainActivity.class));
                     }
                 })
                 .setNegativeButton("No", null)

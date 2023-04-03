@@ -51,6 +51,7 @@ public class NavigatorE extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         finishAffinity();
+                        startActivity(new Intent(NavigatorE.this, MainActivity.class));
                     }
                 })
                 .setNegativeButton("No", null)
