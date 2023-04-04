@@ -28,6 +28,8 @@ public class LoginActivity extends AppCompatActivity {
     PreferenceManager preferenceManager;
     CollectionReference reference;
 
+    public static boolean Employee;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +68,9 @@ public class LoginActivity extends AppCompatActivity {
                                 preferenceManager.putString(Constants.USERNAME, model.getUsername());
                                 preferenceManager.putString(Constants.EMAIL, email);
                                 preferenceManager.putString(Constants.MOBILE, model.getPhone());
+                                preferenceManager.putBoolean("Employee", model.getEmployee());
                                 preferenceManager.putBoolean("blocked", false);
+                                Employee = model.getEmployee();
                                 progressDialog.dismiss();
                                 finish();
                             }

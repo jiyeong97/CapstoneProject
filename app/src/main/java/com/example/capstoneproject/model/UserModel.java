@@ -2,7 +2,7 @@ package com.example.capstoneproject.model;
 
 public class UserModel {
     String username, email, phone, id, image, properties;
-    Boolean blocked;
+    Boolean blocked, employee;
     Long timestamp;
 
     public UserModel() {
@@ -71,4 +71,8 @@ public class UserModel {
     public void setBlocked(Boolean blocked) {
         this.blocked = blocked;
     }
+
+    public Boolean getEmployee(){return employee;}
+
+    public void setEmployee(Boolean employee){this.employee = employee;}
 }

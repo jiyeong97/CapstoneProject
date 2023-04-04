@@ -144,6 +144,17 @@
                 android:src="@drawable/askbtn"
                 android:onClick="goToAskQuestionPage"/>
 
+            <ImageButton
+                android:id="@+id/addBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/clear"
+                android:scaleType="fitCenter"
+                android:src="@drawable/addfaqbtn"
+                android:onClick="goToAddFAQPage"/>
+
             //This button links to About us activity.
             <ImageButton
                 android:id="@+id/aboutUsBtn"

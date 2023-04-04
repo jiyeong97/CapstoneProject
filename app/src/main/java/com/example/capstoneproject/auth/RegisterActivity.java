@@ -103,6 +103,7 @@ public class RegisterActivity extends AppCompatActivity {
         model.setPhone(phone);
         model.setProperties(properties);
         model.setBlocked(false);
+        model.setEmployee(false);
         assert user != null;
         model.setId(user.getUid());
         model.setImage("");
@@ -121,6 +122,7 @@ public class RegisterActivity extends AppCompatActivity {
                         preferenceManager.putString(Constants.MOBILE, phone);
                         preferenceManager.putString(Constants.PROPERTIES, properties);
                         preferenceManager.putBoolean("blocked", false);
+                        preferenceManager.putBoolean("employee", false);
                         preferenceManager.putBoolean(Constants.KEY_SIGNED_IN, false);
                         progressDialog.dismiss();
                         finish();
