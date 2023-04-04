@@ -13,6 +13,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.capstoneproject.NavigatorC;
 import com.example.capstoneproject.R;
 import com.example.capstoneproject.adapter.DataAdapter;
 import com.example.capstoneproject.model.DataModel;
@@ -54,6 +55,10 @@ public class ViewFaqActivity extends AppCompatActivity {
         getFaqs(category);
     }
 
+    public void goToNavi(View view) {
+        Intent intent = new Intent(ViewFaqActivity.this, NavigatorC.class);
+        startActivity(intent);
+    }
     private void getFaqs(String category) {
         progressBar.setVisibility(View.VISIBLE);
         recyclerView.setHasFixedSize(true);

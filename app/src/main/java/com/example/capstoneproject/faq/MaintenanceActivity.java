@@ -7,6 +7,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.capstoneproject.MainActivity;
+import com.example.capstoneproject.NavigatorC;
 import com.example.capstoneproject.R;
 
 public class MaintenanceActivity extends AppCompatActivity {
@@ -15,6 +17,11 @@ public class MaintenanceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maintenance);
+    }
+
+    public void goToNavi(View view) {
+        Intent intent = new Intent(MaintenanceActivity.this, NavigatorC.class);
+        startActivity(intent);
     }
 
     private void goToUrl(String url){

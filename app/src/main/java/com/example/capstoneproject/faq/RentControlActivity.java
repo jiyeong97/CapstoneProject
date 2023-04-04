@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.capstoneproject.NavigatorC;
 import com.example.capstoneproject.R;
 
 public class RentControlActivity extends AppCompatActivity {
@@ -15,6 +16,11 @@ public class RentControlActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rent_control);
+    }
+
+    public void goToNavi(View view) {
+        Intent intent = new Intent(RentControlActivity.this, NavigatorC.class);
+        startActivity(intent);
     }
 
     private void goToUrl(String url){

@@ -34,15 +34,9 @@ public class SplashActivity extends AppCompatActivity {
 
         binding.progressBar.setProgress(i);
         new Handler().postDelayed(() -> {
-            if (preferenceManager.getBoolean(Constants.KEY_SIGNED_IN)) {
-                Intent intent = new Intent(SplashActivity.this, Category.class);
-                startActivity(intent);
-            } else {
                 startActivity(new Intent(SplashActivity.this, MainActivity.class)
                         .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                 finish();
-
-            }
 
         }, SPLASH_DISPLAY_LENGTH);
 

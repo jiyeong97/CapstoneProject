@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.capstoneproject.NavigatorC;
 import com.example.capstoneproject.R;
 
 public class LeaseRenewalActivity extends AppCompatActivity {
@@ -15,6 +16,10 @@ public class LeaseRenewalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lease_renewal);
+    }
+    public void goToNavi(View view) {
+        Intent intent = new Intent(LeaseRenewalActivity.this, NavigatorC.class);
+        startActivity(intent);
     }
 
     private void goToUrl(String url){
