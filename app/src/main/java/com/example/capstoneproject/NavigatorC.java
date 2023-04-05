@@ -16,6 +16,7 @@ import com.example.capstoneproject.auth.RegisterActivity;
 public class NavigatorC extends AppCompatActivity {
 
     ImageButton addFAQ;
+    ImageButton askFAQ;
 
 
     @Override
@@ -24,12 +25,15 @@ public class NavigatorC extends AppCompatActivity {
         setContentView(R.layout.activity_navigator_c);
 
         addFAQ = findViewById(R.id.addBtn);
+        askFAQ = findViewById(R.id.askBtn);
 
         if(LoginActivity.Employee == true){
             addFAQ.setVisibility(View.VISIBLE);
+            askFAQ.setVisibility(View.GONE);
         }
         else{
             addFAQ.setVisibility(View.GONE);
+            askFAQ.setVisibility(View.VISIBLE);
         }
 
     }
